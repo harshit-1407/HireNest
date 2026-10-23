@@ -96,6 +96,16 @@ HireNest/
 ├── client/   React frontend, pages, components, and auth context
 └── server/   Express API, routes, Mongoose models, and auth middleware
 ```
+## Screenshots
+
+### Home Page
+![HireNest Home Page](Screenshots/home.png)
+
+### Job Details
+![HireNest Job Details](Screenshots/job-details.png)
+
+### Employer Dashboard
+![HireNest Employer Dashboard](Screenshots/employer_dashboard.png)
 
 ## Future Improvements
 
