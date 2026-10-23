@@ -1,6 +1,11 @@
+
 import axios from "axios";
 
-const api = axios.create({ baseURL: "/api" });
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL
+    ? `${import.meta.env.VITE_API_URL}/api`
+    : "/api",
+});
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
@@ -9,6 +14,6 @@ api.interceptors.request.use((config) => {
 });
 
 export const errorMessage = (err) =>
-  err.response?.data?.message || "Something went wrong, try again";
+  err.response?.data?.message || "Fahhhhhh";
 
 export default api;
